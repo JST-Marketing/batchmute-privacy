@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Batch Mute handles selected videos, local export history, sharing, recovery files and privacy requests.">
+  <meta name="theme-color" content="#101815">
+  <title>Batch Mute Privacy Policy</title>
+  <style>
+    :root{color-scheme:light;--ink:#172820;--muted:#506258;--line:#dce6df;--green:#144c38}
+    *{box-sizing:border-box}body{margin:0;background:#f7faf7;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.75}
+    a{color:var(--green);text-underline-offset:4px;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #37a97b;outline-offset:5px}
+    .brand{background:#101815;color:#edf9f2;border-bottom:5px solid #6de8bf}.brand div{max-width:850px;margin:auto;padding:22px 30px;font-size:19px;font-weight:750;letter-spacing:.02em}
+    main{max-width:850px;margin:0 auto;padding:48px 30px 65px}h1{font-size:clamp(32px,6vw,48px);line-height:1.15;letter-spacing:-.045em;margin:0 0 18px}h2{font-size:23px;line-height:1.35;letter-spacing:-.02em;margin:0 0 12px}
+    p{margin:0 0 16px}.meta{color:var(--muted);font-size:14px}.summary{background:#e8f4ec;border-left:4px solid #337b57;padding:20px 24px;margin:28px 0 32px}.summary p:last-child{margin-bottom:0}
+    section{padding:28px 0;border-top:1px solid var(--line)}ul{padding-left:24px;margin:0 0 18px}li{padding-left:5px;margin-bottom:10px}strong{font-weight:700}
+    footer{font-size:13px;color:var(--muted);padding-top:20px;border-top:1px solid var(--line)}.package{font-family:ui-monospace,monospace}
+    @media(max-width:480px){main{padding:32px 21px 45px}.brand div{padding:18px 21px}.summary{padding:16px 18px}h2{font-size:21px}}
+    @media print{body{background:white;color:black}.brand{background:white;color:black}main{padding:25px 0}.summary{background:white}section{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="brand"><div>Batch Mute</div></header>
+  <main>
+    <h1>Privacy policy</h1>
+    <p class="meta">Effective October 22, 2026 · Android app <span class="package">com.batchmute.app</span></p>
+    <p>Batch Mute is an Android app provided by Josh Baker that removes audio from selected videos. This policy explains how the app accesses and uses your files, what it stores on your device, and what happens when you choose to share a video.</p>
+    <div class="summary">
+      <p><strong>Your videos are processed on your device.</strong> Batch Mute does not upload videos or app usage data to us. The current app has no internet permission, account system, advertisements, analytics or tracking SDKs.</p>
+      <p>You choose which videos and folders the app can access. You also choose whether to share a saved video with another app.</p>
+    </div>
+    <section aria-labelledby="access">
+      <h2 id="access">Videos and folders you select</h2>
+      <p>The app accesses videos you select through Android's Photos picker or file picker, or send to Batch Mute from another app. It reads the video content and relevant file information, such as the filename, duration, format and thumbnail, to display your selection and create a muted video.</p>
+      <p>You choose where exported videos are saved. Access to selected files or folders may be retained using Android permission grants so the app can finish a batch, reopen saved results or recover an interrupted export. Some grants from other apps are temporary and may expire.</p>
+      <p>Batch Mute does not request broad access to your photo library, contacts, location, camera or microphone. The app uses a foreground processing service and progress notifications for batches, and may keep the device awake while processing.</p>
+    </section>
+    <section aria-labelledby="local">
+      <h2 id="local">Information kept on your device</h2>
+      <ul>
+        <li><strong>Current batch and settings:</strong> selected-file links, names, export settings, progress, results and error messages are saved in the app's private storage so your last batch is available after restarting.</li>
+        <li><strong>Recent exports:</strong> up to 200 saved-video links, their names and save times are stored locally. Older entries are removed from this list as new ones are added. The list is not an additional copy or backup of the videos.</li>
+        <li><strong>Previews:</strong> thumbnails and duration information are loaded locally. The app's preview image cache is held in memory.</li>
+        <li><strong>Temporary exports and recovery files:</strong> processing creates temporary files. In-place replacement also uses a private original-video backup and a recovery record. These protect interrupted writes and are normally removed after verification or successful recovery. Interrupted work may leave files until a later processing or recovery action, or until app storage is removed.</li>
+      </ul>
+      <p>We do not receive these local files or records through Batch Mute. App data is stored within Android's application storage protections; videos saved to a shared or selected folder are subject to that folder's access controls. The app disables Android app-data backup in its configuration.</p>
+    </section>
+    <section aria-labelledby="originals">
+      <h2 id="originals">Keeping, replacing or moving originals</h2>
+      <p>The default export mode creates muted copies and keeps your originals. Videos selected through Photos or shared from another app are treated as read-only selections.</p>
+      <p>If you choose an overwrite or move option for writable files and confirm it, the app can replace an original or remove it after saving and verifying the muted output. In-place replacement uses a temporary recovery backup. Do not clear app storage or uninstall Batch Mute while recovery is pending; doing so can remove the backup needed to restore an interrupted replacement.</p>
+    </section>
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">Sharing and other services</h2>
+      <p>When you tap Share and choose another app, Batch Mute grants that app read access to the saved muted video or videos you selected. The receiving app handles any account selection, upload or posting under its own terms and privacy policy. Batch Mute does not automatically publish your videos.</p>
+      <p>A Photos, file or cloud-storage provider you choose may download, upload or synchronize files using its own service. Google Play and your device's operating system also handle their own installation, update and diagnostic information. Those services operate under their respective privacy policies.</p>
+      <p>Batch Mute does not sell your personal data or send it to advertising or analytics services.</p>
+    </section>
+    <section aria-labelledby="deletion">
+      <h2 id="deletion">Retention and deletion</h2>
+      <p>You can clear the current batch and remove individual entries or clear the list in Recent exports. These actions remove the app's records; they do not delete the corresponding saved video files.</p>
+      <p>Exported videos remain in their chosen destination until you or the relevant storage provider removes them. Manage those files through Gallery, Files or that provider. A moved or deleted file, or removed folder permission, can make a saved link unavailable.</p>
+      <p>Android's app settings let you clear Batch Mute's local storage or uninstall the app, removing its private batch records, settings, history and recovery data. Resolve any pending recovery first. Files saved outside the app's private storage must be managed separately. There is no Batch Mute account to delete and no developer-operated server copy of your videos to request from us.</p>
+    </section>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact and support messages</h2>
+      <p>For privacy questions or requests, contact Josh Baker at <a href="mailto:admin@seenaroundutah.com">admin@seenaroundutah.com</a>.</p>
+      <p>If you email us, we receive your email address, message and any attachments you choose to send. We use that information to handle your inquiry. Support correspondence remains in our email system until deleted. You may request deletion of your correspondence, subject to any applicable retention obligations. Please avoid sending private videos or sensitive information unless needed for your request.</p>
+    </section>
+    <section aria-labelledby="website">
+      <h2 id="website">This policy page and changes</h2>
+      <p>Opening this webpage connects your browser to its hosting service. Hosting and email providers may process the technical information needed to deliver their services under their own policies. This page includes no advertising, analytics scripts or contact form.</p>
+      <p>We may update this policy when the app's features or data practices change. The effective date above identifies the current policy. Any future data collection or sharing will be disclosed in the updated policy and, where required, in the app.</p>
+    </section>
+    <footer>Batch Mute · Privacy policy · Last updated October 22, 2026</footer>
+  </main>
+</body>
+</html>
