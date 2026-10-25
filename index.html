@@ -23,7 +23,7 @@
   <header class="brand"><div>Batch Mute</div></header>
   <main>
     <h1>Privacy policy</h1>
-    <p class="meta">Effective October 22, 2026 · Android app <span class="package">com.batchmute.app</span></p>
+    <p class="meta">Effective October 25, 2026 · Android app <span class="package">com.batchmute.app</span></p>
     <p>Batch Mute is an Android app provided by Josh Baker that removes audio from selected videos. This policy explains how the app accesses and uses your files, what it stores on your device, and what happens when you choose to share a video.</p>
     <div class="summary">
       <p><strong>Your videos are processed on your device.</strong> Batch Mute does not upload videos or app usage data to us. The current app has no internet permission, account system, advertisements, analytics or tracking SDKs.</p>
@@ -40,6 +40,7 @@
       <ul>
         <li><strong>Current batch and settings:</strong> selected-file links, names, export settings, progress, results and error messages are saved in the app's private storage so your last batch is available after restarting.</li>
         <li><strong>Recent exports:</strong> up to 200 saved-video links, their names and save times are stored locally. Older entries are removed from this list as new ones are added. The list is not an additional copy or backup of the videos.</li>
+        <li><strong>Processed-video recognition:</strong> up to 1,000 content fingerprints (SHA-256 hashes and file sizes) of successfully exported inputs and outputs are kept locally. These identify previously processed videos without relying on filenames. Selected rows may also record whether a video has no audio track. These records are not uploaded.</li>
         <li><strong>Previews:</strong> thumbnails and duration information are loaded locally. The app's preview image cache is held in memory.</li>
         <li><strong>Temporary exports and recovery files:</strong> processing creates temporary files. In-place replacement also uses a private original-video backup and a recovery record. These protect interrupted writes and are normally removed after verification or successful recovery. Interrupted work may leave files until a later processing or recovery action, or until app storage is removed.</li>
       </ul>
@@ -48,6 +49,7 @@
     <section aria-labelledby="originals">
       <h2 id="originals">Keeping, replacing or moving originals</h2>
       <p>The default export mode creates muted copies and keeps your originals. Videos selected through Photos or shared from another app are treated as read-only selections.</p>
+      <p>You can grant access to a folder containing the originals, or select matching originals in Files, while keeping a Photos selection in the batch. The app reads files within the granted scope to match their content; this matching step does not modify or delete videos.</p>
       <p>If you choose an overwrite or move option for writable files and confirm it, the app can replace an original or remove it after saving and verifying the muted output. In-place replacement uses a temporary recovery backup. Do not clear app storage or uninstall Batch Mute while recovery is pending; doing so can remove the backup needed to restore an interrupted replacement.</p>
     </section>
     <section aria-labelledby="sharing">
@@ -58,7 +60,7 @@
     </section>
     <section aria-labelledby="deletion">
       <h2 id="deletion">Retention and deletion</h2>
-      <p>You can clear the current batch and remove individual entries or clear the list in Recent exports. These actions remove the app's records; they do not delete the corresponding saved video files.</p>
+      <p>You can clear the current batch and remove individual entries or clear the list in Recent exports. These actions remove the selected batch or recent-export records; they do not delete video files. Removing marked videos changes only the current selection. The bounded processed-video fingerprint history remains until older entries are replaced or you clear app storage.</p>
       <p>Exported videos remain in their chosen destination until you or the relevant storage provider removes them. Manage those files through Gallery, Files or that provider. A moved or deleted file, or removed folder permission, can make a saved link unavailable.</p>
       <p>Android's app settings let you clear Batch Mute's local storage or uninstall the app, removing its private batch records, settings, history and recovery data. Resolve any pending recovery first. Files saved outside the app's private storage must be managed separately. There is no Batch Mute account to delete and no developer-operated server copy of your videos to request from us.</p>
     </section>
@@ -72,7 +74,7 @@
       <p>Opening this webpage connects your browser to its hosting service. Hosting and email providers may process the technical information needed to deliver their services under their own policies. This page includes no advertising, analytics scripts or contact form.</p>
       <p>We may update this policy when the app's features or data practices change. The effective date above identifies the current policy. Any future data collection or sharing will be disclosed in the updated policy and, where required, in the app.</p>
     </section>
-    <footer>Batch Mute · Privacy policy · Last updated October 22, 2026</footer>
+    <footer>Batch Mute · Privacy policy · Last updated October 25, 2026</footer>
   </main>
 </body>
 </html>
